@@ -48,8 +48,8 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-100'))  # Log channel id (make su
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-100'))  # Bin channel id (make sure bot is admin)
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-100'))  # Premium logs channel id
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-100').split()] #(make sure bot is admin)
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-100')  # Support group id (make sure bot is admin)
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-100')  # Request channel id (make sure bot is admin)
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002903891541')  # Support group id (make sure bot is admin)
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1003014023132')  # Request channel id (make sure bot is admin)
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/MzBotzSupport')  # Support group link (make sure bot is admin)
 
 # FORCE_SUB 
@@ -59,7 +59,7 @@ auth_channels     = environ.get("AUTH_CHANNELS", "-1002937430915 -1002954400920 
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', '')    # QR code image for payments
+QR_CODE = environ.get('QR_CODE', 'https://i.ibb.co/6CZqqWF/photo-2025-03-03-09-03-54-7541253640179154960.jpg')    # QR code image for payments
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'mr.yogiraaj@ibl')    # Owner UPI ID for payments
 
 STAR_PREMIUM_PLANS = {
@@ -73,7 +73,7 @@ STAR_PREMIUM_PLANS = {
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "")  # MongoDB URI for the database
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://yogedrasama:D8oNvWFxBws2et6W@cluster0.5m2w6n8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")  # MongoDB URI for the database
 DATABASE_NAME = environ.get('DATABASE_NAME', "mzfilestore") # Database name (default: cluster)
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Vz_files') # Collection name (default: dreamcinezone_files)
 
@@ -120,7 +120,7 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/dreamxbotz') # Group link for the bot
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+xaoqTgycYj1mOTJh') # Group link for the bot
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/AoneMarathi') # Owner link for the bot
 UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/mzbotz') # Update channel link for the bot
 
